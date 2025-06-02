@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Experience</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0e0e0e;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 12%;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: blue;
+    }
+
+    .navbar a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      color: blue;
+      border-bottom: 2px solid blue;
+    }
+
+    .contact {
+      padding: 8px 18px;
+      background-color: white;
+      color: black;
+      border-radius: 6px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .contact:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    .experience-section {
+      padding: 140px 12% 60px;
+      text-align: center;
+    }
+
+    .experience-section h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .experience-section h2 span {
+      color: blue;
+    }
+
+    .experience-section p {
+      font-size: 20px;
+      color: #ccc;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        padding: 15px 8%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .navbar a {
+        margin: 5px 10px;
+      }
+
+      .experience-section h2 {
+        font-size: 36px;
+      }
+
+      .experience-section p {
+        font-size: 18px;
+        padding: 15px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo"><span>Giancarlo</span></a>
+    <nav class="navbar">
+      <a href="index.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="education.html">Education</a>
+    </nav>
+    <a href="index.html#contact" class="contact">Contact Me</a>
+  </header>
+
+  <section class="experience-section">
+    <h2>My <span>Experience</span></h2>
+    <p>
+      <strong>Front Desk Agent</strong><br>
+      <br>
+      Hilton Hotels & Resorts (Present)
+    </p>
+    <p>
+      <strong>Freelance Web Developer</strong><br>
+       Present<br>
+      Built custom websites and web apps for clients across different industries.
+    </p>
+  </section>
+</body>
+</html>
